@@ -1,0 +1,25 @@
+// Base Font Size
+$base-font-px: 18;
+
+// Base Font Family
+$base-font-family: "Overpass", Overpass, Helvetica, helvetica, arial, sans-serif;
+
+// Spacing Variables
+$mobile-edge: 9px;
+$box-padding: 30px;
+$band-padding: 60px;
+$card-padding: 30px;
+$card-spacing: 15px;
+
+
+// Breakpoints
+$screen-zero: 0;
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+$screen-xxs-max: $screen-xs-min - 1;
+$screen-xs-max: $screen-sm-min - 1;
+$screen-sm-max: $screen-md-min - 1;
+$screen-md-max: $screen-lg-min - 1;

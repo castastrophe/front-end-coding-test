@@ -1,0 +1,53 @@
+/*doc
+---
+title: default--band
+category: Extends - block
+---
+default--band adds basic top & bottom padding, as well as a default white background.
+*/
+%default--band {
+    //@include clearfix;
+    padding-top: $band-padding;
+    padding-bottom: $band-padding;
+    background: #fff; // default color
+}
+
+/*doc
+---
+title: default--container
+category: Extends - block
+---
+default--container mimics the container used by bootstrap. It sets a fixed width at each [breakpoints](global_-_variables.html#Breakpoints) and adds padding at mobile breakpoint.
+*/
+%default--container {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    padding: 0 $mobile-edge;
+    @include breakpoint( tablet ) {
+        width: 750px;
+        padding: 0;
+    }
+    @include breakpoint( laptop ) {
+        width: 970px;
+    }
+    @include breakpoint( desktop) {
+        width: 1170px;
+    }
+}
+
+/*doc
+---
+title: default--card
+category: Extends - block
+---
+default--card adds basic padding, as well as a default gray background.
+*/
+%default--card {
+    background: #f0f0f0; // default color
+    .flexbox & {
+        // cards are flex to make sure they flexed items inside of them can be 100% height
+        display: flex;
+        flex-direction: column;
+    }
+}

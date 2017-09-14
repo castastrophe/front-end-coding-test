@@ -1,0 +1,33 @@
+{
+	"example1": {
+		"header": {
+			"title": "Lorem ipsum",
+			"headline": "Lorem ipsum dolor sit amet"
+		},
+		"posts": [{
+			"title": "Post title 1",
+			"content": "<p>Lorem ipsum dolor sit amet, <a href=\"#\">consectetur adipisicing</a> elit.</p>",
+			"cta": {
+				"href": "#",
+				"text": "Read more",
+				"title": "Read more about Post 1"
+			}
+		}, {
+			"title": "Post title 2",
+			"content": "<p>Fugiat enim, at sit natus temporibus maxime repudiandae.</p>",
+			"cta": {
+				"href": "#",
+				"text": "Read more",
+				"title": "Read more about Post 2"
+			}
+		}, {
+			"title": "Post title 3",
+			"content": "<p>Fugiat enim, at sit natus temporibus maxime repudiandae.</p>",
+			"cta": {
+				"href": "#",
+				"text": "Read more",
+				"title": "Read more about Post 3"
+			}
+		}]
+	}
+}

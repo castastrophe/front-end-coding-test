@@ -1,0 +1,17 @@
+%default-title {
+	font-family: $base-font-family;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+%default-headline {
+	font-family: $base-font-family;
+	margin: 0;
+}
+
+%default-copy {
+	p {
+		font-family: $base-font-family;
+		margin: 0;
+	}
+}

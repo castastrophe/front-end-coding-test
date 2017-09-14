@@ -1,0 +1,6 @@
+{% if title or headline %}
+	<header class="test-header--component">
+		{% if title %}<h2 class="test-header-title">{{ title }}</h2>{% endif %}
+		{% if headline %}<h3 class="test-header-headline">{{ headline }}</h3>{% endif %}
+	</header>
+{% endif %}

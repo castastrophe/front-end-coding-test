@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{{ page_title }} | Red Hat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Include CSS fonts -->
+            <!-- http://overpassfont.org/ -->
+            <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overpass/3.0.2/overpass-webfont/overpass.min.css" media="all" />
+            <!-- http://fontawesome.io/icons/ -->
+            <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+            {% if css is not empty %}<link type="text/css" rel="stylesheet" href="/css/{{ css }}.css" media="all" />{% endif %}
+    </head>
+    <body>
+        {% if block( "header" ) %}<!-- *********************** HEADER ************************ -->{% endif %}
+        {% block header %}{% endblock %}
+
+        {% if block( "content" ) %}<!-- *********************** CONTENT *********************** -->{% endif %}
+        {% block content %}{% endblock %}
+
+        {% if block( "footer" ) %}<!-- *********************** FOOTER ************************ -->{% endif %}
+        {% block footer %}{% endblock %}
+
+        <!-- JS files -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script>
+            /** Minimal one-time (on document ready) mock Drupal behaviors */
+            // See http://cgit.drupalcode.org/drupal/tree/misc/drupal.js?h=7.x#n1
+            var Drupal = Drupal || {
+                "settings": {},
+                "behaviors": {},
+                "locale": {}
+            };
+
+            jQuery.noConflict();
+
+            jQuery( function() {
+                 // Throwing errors - there is no test object in behaviors and no attach function declared
+                Drupal.behaviors.test = Drupal.behaviors.test || {};
+
+                try {
+                    Drupal.behaviors.test.attach( document, {} );
+                } catch( err ) {
+                    console.log( err.stack );
+                }
+            } );
+        </script>
+
+        {% if js is not empty %}<script type="text/javascript" src="/js/{{js}}.min.js"></script>{% endif %}
+    </body>
+
+</html>

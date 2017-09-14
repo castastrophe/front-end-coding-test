@@ -1,0 +1,13 @@
+.test-band {
+    &--layout {
+        @extend %default--band;
+    }
+    &-container {
+        @extend %default--container;
+    }
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        grid-gap: 15px;
+    }
+}

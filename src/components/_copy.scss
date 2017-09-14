@@ -1,0 +1,5 @@
+.test-copy {
+	&--component {
+		@extend %default-copy;
+	}
+}

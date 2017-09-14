@@ -1,0 +1,22 @@
+{% extends "../_base.twig" %}
+{% set data = example1|raw %}
+
+{% set page_title = "Example 1" %}
+{% set css = "example1" %}
+{% set js = "example1" %}
+
+{% block content %}
+	{% embed "../layouts/_band.twig" %}
+		{% block header %}
+			{% embed "../components/_header.twig" with data.header only %}
+			{% endembed %}
+		{% endblock %}
+		
+		{% block body %}
+			{% for post in data.posts %}
+				{% embed "../layouts/_card.twig" with post only %}
+				{% endembed %}
+			{% endfor %}
+		{% endblock %}
+	{% endembed %}
+{% endblock %}

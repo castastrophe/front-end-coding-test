@@ -1,0 +1,20 @@
+.test-card {
+    &--layout {
+        @extend %default--card;
+	}
+    &-header {
+		//background: #252527;
+        padding: $card-spacing $card-padding;
+    }
+    &-content {
+        padding: $card-spacing $card-padding $card-padding;
+		.flexbox & {
+	        flex-grow: 1;
+	        display: flex;
+	        flex-direction: column;
+		}
+    }
+    &-footer {
+        padding: $card-padding;
+    }
+}

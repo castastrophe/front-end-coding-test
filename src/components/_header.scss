@@ -1,0 +1,9 @@
+.test-header {
+	&--component {}
+	&-title {
+		@extend %default-title;
+	}
+	&-headline {
+		@extend %default-headline;
+	}
+}

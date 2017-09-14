@@ -1,0 +1,17 @@
+<article class="test-card--layout">
+    {%- if title is not empty %}
+        <header class="test-card-header">
+            {% include "../components/_header.twig" with { "title": title } only %}
+        </header>
+    {% endif %}
+    {% if content is not empty %}
+        <div class="test-card-content">
+            {% include "../components/_copy.twig" with { "content": content } only %}
+        </div>
+    {% endif %}
+    {% if cta is not empty %}
+        <footer class="test-card-footer">
+            {% include "../components/_button.twig" with cta only %}
+        </footer>
+    {% endif %}
+</article>

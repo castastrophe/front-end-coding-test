@@ -1,0 +1,10 @@
+// This is the default CSS that should be on every page
+@import "global/variables/_variables";
+@import "global/functions/_functions";
+@import "global/mixins/_mixins";
+@import "global/extends/_extends";
+
+@import "_components";
+@import "_layouts";
+
+@import "base/_base";
