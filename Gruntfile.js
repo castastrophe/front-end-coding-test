@@ -58,8 +58,8 @@ module.exports = function ( grunt ) {
             pages: {
                 files: {
                     "src/sass/base/__base.scss": "src/sass/base/**/*.scss",
-                    "src/sass/__components.scss": "src/components/**/*.scss",
-                    "src/sass/__layouts.scss": "src/layouts/**/*.scss",
+                    "src/sass/__components.scss": "src/library/components/**/*.scss",
+                    "src/sass/__layouts.scss": "src/library/layouts/**/*.scss",
                     "src/sass/global/extends/__extends.scss": "src/sass/global/extends/**/*.scss",
                     "src/sass/global/functions/__functions.scss": "src/sass/global/functions/**/*.scss",
                     "src/sass/global/mixins/__mixins.scss": "src/sass/global/mixins/**/*.scss",
