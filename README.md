@@ -8,7 +8,7 @@ Have fun, show off, and please give us feedback so we can make this better!
 
 * **[Test 1](instructions/example1.html)**: This contains the detailed instructions for the first coding test.
 
-_Note_: If you're viewing this page on GitHub, some of the links will 404. Links are relative to the localhost env.
+_Note: If you're viewing this page on GitHub, some of the links will 404. Links are relative to the localhost env._
 
 ## Getting started
 
