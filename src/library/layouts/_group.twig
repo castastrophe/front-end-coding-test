@@ -1,6 +1,6 @@
-<article class="test-card--layout">
+<article class="test-group--layout">
     {%- if title is not empty %}
-        <header class="test-card-header">
+        <header class="test-group-header">
             {% include "../components/_header.twig" with {
                 "title": title,
                 "headline": headline
@@ -8,12 +8,12 @@
         </header>
     {% endif %}
     {% if content is not empty %}
-        <div class="test-card-content">
+        <div class="test-group-content">
             {% include "../components/_copy.twig" with { "content": content } only %}
         </div>
     {% endif %}
     {% if cta is not empty %}
-        <footer class="test-card-footer">
+        <footer class="test-group-footer">
             {% include "../components/_button.twig" with cta only %}
         </footer>
     {% endif %}

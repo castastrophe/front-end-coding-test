@@ -1,32 +1,92 @@
 {
 	"example1": {
-		"header": {
+		"header": [{
 			"title": "Lorem ipsum",
 			"headline": "Lorem ipsum dolor sit amet"
-		},
-		"posts": [{
-			"title": "Post title 1",
-			"content": "<p>Lorem ipsum dolor sit amet, <a href=\"#\">consectetur adipisicing</a> elit.</p>",
-			"cta": {
-				"href": "#",
-				"text": "Read more",
-				"title": "Read more about Post 1"
+		}],
+		"cards": [{
+			"front": {
+				"title": "Front card 1",
+				"content": "<p>Lorem ipsum dolor sit amet, <a href=\"#\">consectetur adipisicing</a> elit.</p>",
+				"cta": {
+					"href": "#",
+					"text": "See back",
+					"title": "See back of card 1"
+				}
+			},
+			"back": {
+				"title": "Back card 1",
+				"content": "<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>"
 			}
 		}, {
-			"title": "Post title 2",
-			"content": "<p>Fugiat enim, at sit natus temporibus maxime repudiandae.</p>",
-			"cta": {
-				"href": "#",
-				"text": "Read more",
-				"title": "Read more about Post 2"
+			"front": {
+				"title": "Front card 2",
+				"content": "<p>Fugiat enim, at sit natus temporibus maxime repudiandae.</p>",
+				"cta": {
+					"href": "#",
+					"text": "See back",
+					"title": "See back of card 2"
+				}
+			},
+			"back": {
+				"title": "Back card 2",
+				"content": "<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>"
 			}
 		}, {
-			"title": "Post title 3",
-			"content": "<p>Fugiat enim, at sit natus temporibus maxime repudiandae.</p>",
-			"cta": {
-				"href": "#",
-				"text": "Read more",
-				"title": "Read more about Post 3"
+			"front": {
+				"title": "Front card 3",
+				"content": "<p>Fugiat enim, at sit natus temporibus maxime repudiandae.</p>",
+				"cta": {
+					"href": "#",
+					"text": "See back",
+					"title": "See back of card 3"
+				}
+			},
+			"back": {
+				"title": "Back card 3",
+				"content": "<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>"
+			}
+		},{
+			"front": {
+				"title": "Front card 4",
+				"content": "<p>Lorem ipsum dolor sit amet, <a href=\"#\">consectetur adipisicing</a> elit.</p>",
+				"cta": {
+					"href": "#",
+					"text": "See back",
+					"title": "See back of card 4"
+				}
+			},
+			"back": {
+				"title": "Back card 4",
+				"content": "<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>"
+			}
+		}, {
+			"front": {
+				"title": "Front card 5",
+				"content": "<p>Fugiat enim, at sit natus temporibus maxime repudiandae.</p>",
+				"cta": {
+					"href": "#",
+					"text": "See back",
+					"title": "See back of card 5"
+				}
+			},
+			"back": {
+				"title": "Back card 5",
+				"content": "<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>"
+			}
+		}, {
+			"front": {
+				"title": "Front card 6",
+				"content": "<p>Fugiat enim, at sit natus temporibus maxime repudiandae.</p>",
+				"cta": {
+					"href": "#",
+					"text": "See back",
+					"title": "See back of card 6"
+				}
+			},
+			"back": {
+				"title": "Back card 6",
+				"content": "<p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>"
 			}
 		}]
 	}

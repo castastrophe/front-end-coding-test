@@ -7,16 +7,29 @@
 
 {% block content %}
 	{% embed "../library/layouts/_band.twig" %}
-		{% block header %}
-			{% embed "../library/components/_header.twig" with data.header only %}
-			{% endembed %}
+	
+		{% block band_header %}
+			|| {{ data.header }} ||
+			{% for item in data.header %}
+				{% embed "../library/layouts/_group.twig" with item only %}
+				{% endembed %}
+				{# embed "../library/components/_header.twig" with item only #}
+				{# endembed #}
+			{% endfor %}
 		{% endblock %}
 		
 		{% block body %}
-			{% for post in data.posts %}
-				{% embed "../library/layouts/_card.twig" with post only %}
-				{% endembed %}
+			{% for card in data.cards %}
+				{% for side in card %}
+					{% embed "../library/layouts/_card.twig" with side only %}
+					{% endembed %}
+				{% endfor %}
 			{% endfor %}
 		{% endblock %}
 	{% endembed %}
+	
+	{% block footer %}
+	{% endblock %}
+	
+{% endembed %}
 {% endblock %}

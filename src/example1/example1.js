@@ -1,8 +1,8 @@
 // Flip an element on hover or on click
 rh.test.flip = {
     attr: {
-        trigger: "data-ux-flip-on",
-        visible: "data-ux-visible"
+        trigger: "data-test-flip-on",
+        visible: "data-test-visible"
     },
     action: function( $el ) {}
 };
