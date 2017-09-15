@@ -20,7 +20,7 @@ module.exports = function ( grunt ) {
         copy: {
             images: {
                 expand: true,
-                cwd: paths.src + "/",
+                cwd: paths.src + "/assets/",
                 src: [ "**/*.{png,jpg,gif}" ],
                 dest: paths.dist + "/"
             }
@@ -35,7 +35,7 @@ module.exports = function ( grunt ) {
             global: {
                 files: [ {
                     expand: true,
-                    cwd: paths.src + "/sass",
+                    cwd: paths.src + "/sass/",
                     src: [ "default.scss" ],
                     dest: paths.dist + "/css/",
                     ext: ".css",
@@ -167,6 +167,31 @@ module.exports = function ( grunt ) {
                 }
             }
         },
+        // https://github.com/treasonx/grunt-markdown
+        markdown: {
+            intro: {
+                files: [ {
+                    src: [ "README.md" ],
+                    dest: paths.dist + "/pages/",
+                    expand: true,
+                    flatten: true,
+                    rename: function(dest, src) {
+                        return dest + src.replace( "README", "index" );
+                    },
+                    ext: ".html"
+                } ]
+            },
+            tests: {
+                files: [ {
+                    cwd: paths.src + "/",
+                    src: [ "example*/**/*.md" ],
+                    dest: paths.dist + "/pages/instructions/",
+                    expand: true,
+                    flatten: true,
+                    ext: ".html"
+                } ]
+            }
+        },
         // Connect server for hologram
         // https://github.com/gruntjs/grunt-contrib-connect
         connect: {
@@ -184,6 +209,12 @@ module.exports = function ( grunt ) {
         },
         // https://github.com/gruntjs/grunt-contrib-watch
         watch: {
+            options: {
+                livereload: {
+                    host: 'localhost',
+                    port: 1337
+                }
+            },
             sass: {
                 files: [ paths.src + "/sass/**/*.scss" ],
                 tasks: [ "sass_globbing", "sass:global", "postcss" ]
@@ -203,6 +234,10 @@ module.exports = function ( grunt ) {
             js: {
                 files: [ paths.src + "/**/*.js" ],
                 tasks: [ "js" ]
+            },
+            md: {
+                files: [ "**/*.md" ],
+                tasks: [ "markdown" ]
             }
         }
     } );
@@ -220,11 +255,12 @@ module.exports = function ( grunt ) {
     grunt.registerTask( "default", [
         "clean", // files
         "copy", // images
-        "twigRender", // images
+        "twigRender", // templates
         "sass_globbing", // sass
         "sass", // sass
         "postcss", // sass
         "js", // js
+        "markdown", // instructions
     ] );
 
     grunt.registerTask( "watcher", [

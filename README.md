@@ -6,11 +6,23 @@ These are intentionally open-ended to give you a chance to express your creativi
 
 Have fun, show off, and please give us feedback so we can make this better!
 
+[Test 1](instructions/example1.html): This contains the detailed instructions for the first coding test.
+
 ## Getting started
 
 To get started with this, simply fork this repository, make your changes, and send us a link to your repo so we can have a look.
 
-To run the local environment: `grunt watcher`
+1. [Fork the repository.](https://help.github.com/articles/fork-a-repo/)
+2. Once you have the repo pulled down, move into the directory and run: `npm install`.
+3. To kick off the local environment run: `grunt watcher`
 
 ## Repo guide
 
+All the code you will be editing in this test lives inside the `src` folder.
+
+- `assets`: This contains the image assets for use in the project.
+- `example1`: This contains the test-specifc JavaScript, styles, and templates for the first test.
+- `library`: This contains the global components and layouts used in the tests:
+  - **Components**: Components are small, reusable templates and styles.
+  - **Layouts**: Layouts are used as containers for components and can provide padding, layout, and semantic markup.
+- `sass`: This folder contains the global Sass styles including extends, mixins, and variables.
