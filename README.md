@@ -23,6 +23,11 @@ All the code you will be editing in this test lives inside the `src` folder.
 - `assets`: This contains the image assets for use in the project.
 - `example1`: This contains the test-specifc JavaScript, styles, and templates for the first test.
 - `library`: This contains the global components and layouts used in the tests:
-  - **Components**: Components are small, reusable templates and styles.
-  - **Layouts**: Layouts are used as containers for components and can provide padding, layout, and semantic markup.
+  - `components`: Components are small, reusable templates and styles.
+  - `layouts`: Layouts are used as containers for components and can provide padding, layout, and semantic markup.
 - `sass`: This folder contains the global Sass styles including extends, mixins, and variables.
+
+### Q: Where can I find...
+- **Card markup?** `library/layouts/_card.twig`
+- **Sass color variables?** `sass/global/variables/_global-variables.scss`
+- **Card content?** `data.json`
