@@ -8,6 +8,8 @@ Have fun, show off, and please give us feedback so we can make this better!
 
 * **[Test 1](instructions/example1.html)**: This contains the detailed instructions for the first coding test.
 
+_Note_: If you're viewing this page on GitHub, some of the links will 404. Links are relative to the localhost env.
+
 ## Getting started
 
 To get started with this, simply fork this repository, make your changes, and send us a link to your repo so we can have a look.
