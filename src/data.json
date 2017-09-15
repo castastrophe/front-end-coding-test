@@ -1,7 +1,6 @@
 {
 	"example1": {
 		"header": {
-			"title": "Lorem ipsum",
 			"headline": "Lorem ipsum dolor sit amet"
 		},
 		"cards": [{
@@ -120,7 +119,7 @@
 			}
 		}], 
 		"footer": {
-			"content": "<p><small>Vestibulöm ac diam sit amet quam vehicula elementum sed sit amet dui. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</small></p>"
+			"content": "<p><small>Copyright &copy;2017</small></p>"
 		}
 	}
 }

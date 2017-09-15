@@ -5,6 +5,9 @@
     }
     &-container {
         @extend %default--container;
+        > * {
+            margin-bottom: $band-padding / 3;
+        }
     }
     &-content {
         display: grid;
