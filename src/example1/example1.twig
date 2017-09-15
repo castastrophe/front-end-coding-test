@@ -9,27 +9,25 @@
 	{% embed "../library/layouts/_band.twig" %}
 	
 		{% block band_header %}
-			|| {{ data.header }} ||
-			{% for item in data.header %}
-				{% embed "../library/layouts/_group.twig" with item only %}
-				{% endembed %}
-				{# embed "../library/components/_header.twig" with item only #}
-				{# endembed #}
-			{% endfor %}
+			{% include "../library/components/_header.twig" with {
+				"title": data.header.title,
+				"headline": data.header.headline
+			} only %}
 		{% endblock %}
 		
-		{% block body %}
+		{% block band_body %}
 			{% for card in data.cards %}
 				{% for side in card %}
-					{% embed "../library/layouts/_card.twig" with side only %}
-					{% endembed %}
+					{% include "../library/layouts/_card.twig" with side only %}
 				{% endfor %}
 			{% endfor %}
 		{% endblock %}
+	
+		{% block band_footer %}
+			{% include "../library/components/_copy.twig" with {
+				"content": data.footer.content
+			} only %}
+		{% endblock %}
+	
 	{% endembed %}
-	
-	{% block footer %}
-	{% endblock %}
-	
-{% endembed %}
 {% endblock %}

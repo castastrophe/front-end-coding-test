@@ -1,6 +1,7 @@
 .test-band {
     &--layout {
         @extend %default--band;
+        background-image: url(localhost:9001/header-press-release-list-2000x1357.jpg);
     }
     &-container {
         @extend %default--container;
@@ -10,5 +11,11 @@
         grid-template-columns: repeat(3, minmax(100px, 1fr));
         grid-gap: 15px;
         // Build a tablet/mobile layout
+    }
+    &-footer {
+        float: right;
+    }
+    &-copyright {
+        float: left;
     }
 }

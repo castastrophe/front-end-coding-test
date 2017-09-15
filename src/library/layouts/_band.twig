@@ -1,27 +1,27 @@
 {% set has_header = block( "band_header" ) is not empty %}
-{% set has_body     = block( "body" ) is not empty %}
-{% set has_footer   = block( "footer" ) is not empty %}
+{% set has_body     = block( "band_body" ) is not empty %}
+{% set has_footer   = block( "band_footer" ) is not empty %}
 
 {# Break apart aside position values for better control of logic #}
 {%- if has_header or has_body or has_footer -%}
     <section class="test-band--layout">
         <div class="test-band-container">
-            -- {{ block( "band_header" ) }} -- {{ has_header }} --
             {% if has_header %}
                 <header class="test-band-header">
                     {% block band_header %}{% endblock %}
                 </header>
-            {% endif %}
-            {% if has_body %}
+        {% endif %}
+        {% if has_body %}
                 <div class="test-band-content">
-                    {% block body %}{% endblock %}
+                    {% block band_body %}{% endblock %}
                 </div>
             {% endif %}
-            {% if has_footer %}
-                <footer class="test-band-footer">
-                    {% block footer %}{% endblock %}
-                </footer>
-            {% endif %}
+        {% if has_footer %}
+        <footer class="test-band-footer">
+                    {% block band_footer %}{% endblock %}
         </div>
+        {% endif %}
+    </footer>
+    <div class="test-band-copyright"><p><small>Copyright &copy; 2017</small></p></div>
     </section>
 {%- endif -%}

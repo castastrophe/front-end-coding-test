@@ -11,3 +11,6 @@ Have fun, show off, and please give us feedback so we can make this better!
 To get started with this, simply fork this repository, make your changes, and send us a link to your repo so we can have a look.
 
 To run the local environment: `grunt watcher`
+
+## Repo guide
+
