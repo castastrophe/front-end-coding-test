@@ -24,11 +24,11 @@ The files for this test live in the `example1` folder and contains the following
   - Desktop: 3 columns
   - Tablet: 2 columns
   - Mobile: 1 column
-3. Please add some snazzy styles to the CTA button!
+3. Please add some snazzy styles to the call-to-action button at the bottom of each card.
 4. Update the `.test-header-headline` use the `%default-headline style` in the header component.
 	- _Hint_: check the global Sass extends
-5. Create styles for the small and a tags inside the copy component.
-6. Tidy up any colors and typography styles using DRY principles
+5. Create styles for the `<small>` and `<a>` HTML tags inside the copy component.
+6. Tidy up any colors and typography styles using [DRY principles](http://vanseodesign.com/css/dry-principles/)(Don't Repeat Yourself).
 7. Fix the background image path on the band layout.  [This is the image](https://www.redhat.com/profiles/rh/themes/redhatdotcom/img/header/header-press-release-list-2000x1357.jpg) that should be loading.
 
 ### Interactions
