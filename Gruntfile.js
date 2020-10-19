@@ -180,11 +180,10 @@ module.exports = function (grunt) {
           options: {
             livereload: 1337,
             port: 9001,
+            useAvailablePort: true,
             hostname: "0.0.0.0",
             base: "dist",
-            open: {
-              target: "http://localhost:9001" // Target url to open
-            }
+            open: true
           }
         }
       },
