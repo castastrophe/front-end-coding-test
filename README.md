@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/88750a6c-bc84-4e98-96d0-abafc61e15bf/deploy-status)](https://app.netlify.com/sites/redhat-coding-challenge/deploys)
+
 # Front-end coding challenge
 
 Contained within this repo is a series of problems to be solved using HTML, CSS, and JavaScript.  Feel free to put comments in the files to explain your solution.  Try to maintain a similar coding style to the other examples in the repository.
@@ -6,7 +8,7 @@ These are intentionally open-ended to give you a chance to express your creativi
 
 Have fun, show off, and please give us feedback so we can make this better!
 
-* **[Challenge #1](instructions/example1.html)**: This contains the detailed instructions for the first coding challenge.
+* **[Challenge #1](/instructions/example1.html)**: This contains the detailed instructions for the first coding challenge.
 
 _Note: If you're viewing this page on GitHub, some of the links will 404. Links are relative to the localhost env._
 
